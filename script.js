@@ -34,7 +34,15 @@ function displayRandomDrink () {
         }
       }
 
+      //Resizes img to a fixed size
+      function resizeImage() {
+        drinkImage.style.width = "300px"; 
+        drinkImage.style.height = "300px"; 
+        drinkImage.style.objectFit = "cover"; 
+      }
+
       drinkImage.src = drink.strDrinkThumb;
+      resizeImage();
 
 
     })
@@ -59,10 +67,6 @@ function fetchDadJoke() {
     .then(data => {
       dadJokeDisplay.textContent = data.joke;
     })
-    .catch(error => {
-      console.error('Error fetching dad joke:', error);
-      dadJokeDisplay.textContent = 'Oops! Failed to fetch a joke.';
-    });
 }
 
 dadJokeButton.addEventListener('click', fetchDadJoke);
