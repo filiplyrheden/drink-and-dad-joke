@@ -69,3 +69,9 @@ function fetchDadJoke() {
 //Button
 button.addEventListener('click', displayRandomDrink);
 button.addEventListener('click', fetchDadJoke);
+
+//Changes CSS from display:none; to display:flex;
+document.getElementById('dad-button').addEventListener('click', function() {
+  const contentContainer = document.querySelector('.content-container');
+  contentContainer.style.display = 'flex';
+});
