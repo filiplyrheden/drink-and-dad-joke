@@ -87,14 +87,14 @@ document.getElementById('dad-button').addEventListener('click', function () {
   contentContainer.scrollIntoView({ behavior: 'smooth' });
 });
 
-// Measurement convert 
+// Measurement converter 
 const conversionRates = {
-  "ml": { "ml": 1, "fl-oz": 0.033814, "cups": 0.00422675, "tsp": 0.202884, "tbsp": 0.067628, "shots": 0.033814 },
-  "fl-oz": { "ml": 29.5735, "fl-oz": 1, "cups": 0.125, "tsp": 6, "tbsp": 2, "shots": 1.5 },
-  "cups": { "ml": 236.588, "fl-oz": 8, "cups": 1, "tsp": 48, "tbsp": 16, "shots": 12 },
-  "tsp": { "ml": 4.92892, "fl-oz": 0.166667, "cups": 0.0208333, "tsp": 1, "tbsp": 0.333333, "shots": 0.166667 },
-  "tbsp": { "ml": 14.7868, "fl-oz": 0.5, "cups": 0.0625, "tsp": 3, "tbsp": 1, "shots": 0.5 },
-  "shots": { "ml": 44.3603, "fl-oz": 1.5, "cups": 0.125, "tsp": 9, "tbsp": 3, "shots": 1 }
+    "cl": { "cl": 1, "oz": 0.33814, "cups": 0.0422675, "tsp": 2.02884, "tbsp": 0.67628, "shots": 0.33814 },
+    "oz": { "cl": 2.95735, "oz": 1, "cups": 0.125, "tsp": 6, "tbsp": 2, "shots": 1.5 },
+    "cups": { "cl": 23.6588, "oz": 8, "cups": 1, "tsp": 48, "tbsp": 16, "shots": 12 },
+    "tsp": { "cl": 0.492892, "oz": 0.166667, "cups": 0.0208333, "tsp": 1, "tbsp": 0.333333, "shots": 0.166667 },
+    "tbsp": { "cl": 1.47868, "oz": 0.5, "cups": 0.0625, "tsp": 3, "tbsp": 1, "shots": 0.5 },
+    "shots": { "cl": 4.43603, "oz": 1.5, "cups": 0.125, "tsp": 9, "tbsp": 3, "shots": 1 }
 };
 
 function convert() {
