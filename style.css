@@ -13,6 +13,7 @@ body {
     text-align: center;
     color: var(--white);
     font-family: "Dancing Script", cursive;
+    font-size: 64px;
   }
 
   p {
@@ -23,7 +24,7 @@ body {
   .intro-text-container {
     display: flex;
     flex-direction: row;
-    margin: 100px;
+    margin: 0 100px 50px 100px;
   }
 
   .intro-img-container {
@@ -41,7 +42,7 @@ align-self: center;
     gap: 20px; 
     justify-content: center; 
     align-items: flex-start; 
-    margin: 10px;
+    margin: 0;
   }
   
 .drink-container, .joke-container {
