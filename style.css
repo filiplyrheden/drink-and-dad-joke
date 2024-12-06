@@ -3,6 +3,16 @@ body {
     margin: 0;
   }
 
+  h1 {
+    text-align: center;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+  }
+
   .flex-container {
     display: flex; 
     gap: 20px; 
