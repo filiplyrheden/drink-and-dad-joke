@@ -5,6 +5,7 @@ const ingredients = document.querySelector('#ingredients')
 const drinkInstructions = document.querySelector('#instructions')
 const drinkImage = document.querySelector(".drink-image")
 const contentContainer = document.querySelector('.content-container');
+const converterContainer = document.querySelector('.converter-container');
 
 const randomCocktail = 'https://www.thecocktaildb.com/api/json/v1/1/random.php'
 
@@ -75,6 +76,7 @@ button.addEventListener('click', fetchDadJoke);
 document.getElementById('dad-button').addEventListener('click', function() {
   const contentContainer = document.querySelector('.content-container');
   contentContainer.style.display = 'flex';
+  converterContainer.style.display = 'flex';
 });
 
 //Change button text on click
@@ -111,4 +113,5 @@ function convert() {
   const result = quantity * conversionRate;
 
   document.getElementById("result").innerText = `${quantity} ${fromUnit} is equal to ${result.toFixed(2)} ${toUnit}`;
+
 }
