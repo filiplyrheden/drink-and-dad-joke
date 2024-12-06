@@ -1,71 +1,72 @@
 :root {
   --red: #951010;
-  --white: #FFF;
-  --paper: #FFEDC2;
+  --white: #fff;
+  --paper: #ffedc2;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: var(--red);
-  }
+  margin: 0;
+  background-color: var(--red);
+  box-sizing: border-box;
+}
 
-  h1 {
-    text-align: center;
-    color: var(--white);
-    font-family: "Dancing Script", cursive;
-    font-size: 64px;
-  }
+h1 {
+  text-align: center;
+  color: var(--white);
+  font-family: "Dancing Script", cursive;
+  font-size: 64px;
+}
 
-  p {
-    color: var(--white);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-  .intro-text-container {
-    display: flex;
-    flex-direction: row;
-    margin: 0 100px 50px 100px;
-  }
+p {
+  color: var(--white);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 
-  .intro-img-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-  }
+.intro-text-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 100px 50px 100px;
+}
 
-  .intro img {
-    width: 820px;
-  }
+.intro-img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.intro img {
+  width: 820px;
+}
 
 .button-container {
   height: 100px;
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-  
+
 #dad-button {
   margin: 0;
   height: 50px;
 }
 
 .content-container {
-  gap: 20px; 
-  justify-content: center; 
-  align-items: flex-start; 
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
   margin: 0;
   display: none;
 }
 
 .content-container p {
-color: black;
+  color: black;
 }
 
-.content-container p, #instructions {
-  padding: 25px;
-  }
-
-.drink-container, .joke-container {
+.drink-container,
+.joke-container {
   margin: 20px;
   background-color: var(--paper);
   display: flex;
@@ -75,31 +76,45 @@ color: black;
 }
 
 .drink-container {
-  min-height: 400px;
-  width: 600px;
+  display: flex;
+  flex-direction: row;
+  min-height: 300px;
+  width: 66%;
   padding-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .joke-container {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 33%;
   padding: 20px;
+  box-sizing: border-box;
+}
+
+#dad-joke {
+  font-size: 20px;
+  font-family: "Arial Rounded MT";
+}
+
+.drink-text-wrapper {
+  padding: 30px;
 }
 
 .drink-image {
   border: black solid 2px;
   border-radius: 50%;
+  margin: 20px;
 }
 
 .converter-container {
   display: none;
-  justify-content: center; 
-  align-items: flex-start; 
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .converter-container p {
   color: black;
-  }
+}
 
 .converter {
   width: 400px;

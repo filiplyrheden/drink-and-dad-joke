@@ -38,8 +38,8 @@ function displayRandomDrink () {
 
       //Resizes img to a fixed size
       function resizeImage() {
-        drinkImage.style.width = "250px"; 
-        drinkImage.style.height = "250px"; 
+        drinkImage.style.width = "200px"; 
+        drinkImage.style.height = "200px"; 
         drinkImage.style.objectFit = "cover"; 
       }
 
