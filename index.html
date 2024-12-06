@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drink and dad joke</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="fonts.css" />
   </head>
   <body>
     <h1>Reconnect with your dad at christmas</h1>
@@ -13,8 +13,9 @@
     <section class="intro">
       <div class="intro-text-container">
         <p class="intro-text">
-          Christmas is here, and so are the chance to finally get the approval from you dad you never got. What better way to break the ice than with a perfectly
-          timed dad joke and a festive cocktail?
+          Christmas is here, and so are the chance to finally get the approval
+          from you dad you never got. What better way to break the ice than with
+          a perfectly timed dad joke and a festive cocktail?
         </p>
 
         <p class="intro-text">
@@ -45,6 +46,37 @@
 
     <div class="button-container">
       <button id="dad-button">Reconnect with dad</button>
+    </div>
+
+    <div class="converter-container">
+      <div class="converter">
+        <h2>Measurement converter</h2>
+        <label for="quantity">Enter Quantity:</label>
+    <input type="number" id="quantity" />
+    
+    <label for="from-unit">From:</label>
+    <select id="from-unit">
+        <option value="ml">Milliliters</option>
+        <option value="fl-oz">Fluid Ounces</option>
+        <option value="cups">Cups</option>
+        <option value="tsp">Teaspoons</option>
+        <option value="tbsp">Tablespoons</option>
+        <option value="shots">Shots</option>
+    </select>
+    
+    <label for="to-unit">To:</label>
+    <select id="to-unit">
+        <option value="ml">Milliliters</option>
+        <option value="fl-oz">Fluid Ounces</option>
+        <option value="cups">Cups</option>
+        <option value="tsp">Teaspoons</option>
+        <option value="tbsp">Tablespoons</option>
+        <option value="shots">Shots</option>
+    </select>
+    
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+      </div>
     </div>
 
     <script src="/script.js"></script>

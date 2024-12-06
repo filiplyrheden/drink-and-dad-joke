@@ -75,8 +75,9 @@ color: black;
 }
 
 .drink-container {
-  height: 700px;
+  min-height: 400px;
   width: 600px;
+  padding-bottom: 10px;
 }
 
 .joke-container {
@@ -88,4 +89,24 @@ color: black;
 .drink-image {
   border: black solid 2px;
   border-radius: 50%;
+}
+
+.converter-container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+}
+
+.converter-container p {
+  color: black;
+  }
+
+.converter {
+  width: 400px;
+  margin: 20px;
+  background-color: var(--paper);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
 }
