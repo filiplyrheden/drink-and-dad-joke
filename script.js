@@ -81,7 +81,7 @@ document.getElementById('dad-button').addEventListener('click', function() {
 
 //Change button text on click
 document.getElementById('dad-button').addEventListener('click', function() {
-  button.textContent = "Try again";
+  button.textContent = "Dad still not taking you seriously? Try again!";
 });
 
   // Scroll to the content on click
