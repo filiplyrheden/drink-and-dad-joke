@@ -7,10 +7,20 @@ body {
     text-align: center;
   }
 
-  .intro {
+  .intro-text-container {
     display: flex;
     flex-direction: row;
     margin: 100px;
+  }
+
+  .intro-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro img {
+    width: 820px;
+align-self: center;
   }
 
   .flex-container {
@@ -27,13 +37,11 @@ body {
 
 .button-container {
   height: 100px;
-  position: relative;
-
+display: flex;
+justify-content: center;
 }
   
 #dad-button {
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  height: 50px;
 }
