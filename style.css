@@ -1,7 +1,11 @@
 :root {
   --red: #951010;
   --white: #fff;
+  --black: #000;
   --paper: #ffedc2;
+  --charcoal: #333333;
+  --dark-gold: #d4af37;
+  --light-gold: #f8e473;
 }
 
 body {
@@ -64,8 +68,8 @@ align-items: center;
 }
 
 #dad-button {
-  background: linear-gradient(90deg, #d4af37, #f8e473);
-  color: #000;
+  background: linear-gradient(90deg, var(--dark-gold), var(--light-gold));
+  color: var(--charcoal);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -79,8 +83,8 @@ align-items: center;
 }
 
 #dad-button:hover {
-  background: linear-gradient(90deg, #f8e473, #d4af37);
-  color: #fff;
+  background: linear-gradient(90deg, var(--light-gold), var(--dark-gold));
+  color: var(--white);
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
@@ -94,7 +98,7 @@ align-items: center;
 }
 
 .content-container p {
-  color: black;
+  color: var(--black);
 }
 
 .drink-container,
@@ -145,7 +149,7 @@ align-items: center;
 }
 
 .converter-container p {
-  color: black;
+  color: var(--black);
 }
 
 .converter {
