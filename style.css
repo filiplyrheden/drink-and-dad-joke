@@ -1,6 +1,7 @@
 :root {
   --red: #951010;
   --white: #FFF;
+  --paper: #FFEDC2;
 }
 
 body {
@@ -34,20 +35,7 @@ body {
 
   .intro img {
     width: 820px;
-align-self: center;
   }
-
-  .flex-container {
-    display: flex; 
-    gap: 20px; 
-    justify-content: center; 
-    align-items: flex-start; 
-    margin: 0;
-  }
-  
-.drink-container, .joke-container {
-    margin: 20px;
-}
 
 .button-container {
   height: 100px;
@@ -58,4 +46,37 @@ justify-content: center;
 #dad-button {
   margin: 0;
   height: 50px;
+}
+
+.content-container {
+  display: flex; 
+  gap: 20px; 
+  justify-content: center; 
+  align-items: flex-start; 
+  margin: 0;
+}
+
+.content-container p {
+color: black;
+}
+
+.drink-container, .joke-container {
+  margin: 20px;
+  background-color: var(--paper);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.drink-container {
+  height: 600px;
+  width: 600px;
+}
+
+.joke-container {
+  height: 200px;
+  width: 300px;
+  padding: 20px;
 }

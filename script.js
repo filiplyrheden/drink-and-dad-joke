@@ -66,5 +66,6 @@ function fetchDadJoke() {
     })
 }
 
+//Button
 button.addEventListener('click', displayRandomDrink);
 button.addEventListener('click', fetchDadJoke);
