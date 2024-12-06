@@ -26,6 +26,10 @@ p {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+section .intro {
+  height: 100vh;;
+}
+
 .intro {
   display: flex;
   flex-direction: row;
