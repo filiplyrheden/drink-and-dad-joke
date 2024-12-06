@@ -13,15 +13,24 @@
     <section class="intro">
       <div class="intro-text-container">
         <p class="intro-text">
-          Christmas is here, and so are the chance to finally get the approval
+          Christmas is here, and so is the chance to finally get the approval
           from you dad you never got. What better way to break the ice than with
           a perfectly timed dad joke and a festive cocktail?
         </p>
 
         <p class="intro-text">
-          Whether your dad’s humor is cringe-worthy or he’s secretly the king of
-          puns, we’ve got you covered with our drink-and-dad-joke-generator!
+          We’ve got you covered with our drink-and-dad-joke-generator!
         </p>
+
+        <p class="intro-text">
+          Click the button to get all the tools you need to finally get
+          dads attention.
+        </p>
+
+
+    <div class="button-container">
+      <button id="dad-button">Reconnect with dad</button>
+    </div>
       </div>
 
       <div class="intro-img-container">
@@ -32,14 +41,14 @@
     <div class="content-container">
       <div class="drink-container">
         <div class="drink-text-wrapper">
-        <h2>Cocktail:</h2>
-        <h3 id="drink-title"></h3>
-        <ul id="ingredients"></ul>
-        <p id="instructions"></p>
-      </div>
-      <div class="drink-img-wrapper">
-        <img class="drink-image" src="" alt="" />
-      </div>
+          <h2>Cocktail:</h2>
+          <h3 id="drink-title"></h3>
+          <ul id="ingredients"></ul>
+          <p id="instructions"></p>
+        </div>
+        <div class="drink-img-wrapper">
+          <img class="drink-image" src="" alt="" />
+        </div>
       </div>
 
       <div class="joke-container">
@@ -48,38 +57,34 @@
       </div>
     </div>
 
-    <div class="button-container">
-      <button id="dad-button">Reconnect with dad</button>
-    </div>
-
     <div class="converter-container">
       <div class="converter">
         <h2>Measurement converter</h2>
         <label for="quantity">Enter Quantity:</label>
-    <input type="number" id="quantity" />
-    
-    <label for="from-unit">From:</label>
-    <select id="from-unit">
-      <option value="oz">oz</option>
-        <option value="cl">Centiliters</option>
-        <option value="cups">Cups</option>
-        <option value="tsp">Teaspoons</option>
-        <option value="tbsp">Tablespoons</option>
-        <option value="shots">Shots</option>
-    </select>
-    
-    <label for="to-unit">To:</label>
-    <select id="to-unit">
-        <option value="cl">Centiliters</option>
-        <option value="oz">oz</option>
-        <option value="cups">Cups</option>
-        <option value="tsp">Teaspoons</option>
-        <option value="tbsp">Tablespoons</option>
-        <option value="shots">Shots</option>
-    </select>
-    
-    <button onclick="convert()">Convert</button>
-    <p id="result"></p>
+        <input type="number" id="quantity" />
+
+        <label for="from-unit">From:</label>
+        <select id="from-unit">
+          <option value="oz">oz</option>
+          <option value="cl">Centiliters</option>
+          <option value="cups">Cups</option>
+          <option value="tsp">Teaspoons</option>
+          <option value="tbsp">Tablespoons</option>
+          <option value="shots">Shots</option>
+        </select>
+
+        <label for="to-unit">To:</label>
+        <select id="to-unit">
+          <option value="cl">Centiliters</option>
+          <option value="oz">oz</option>
+          <option value="cups">Cups</option>
+          <option value="tsp">Teaspoons</option>
+          <option value="tbsp">Tablespoons</option>
+          <option value="shots">Shots</option>
+        </select>
+
+        <button onclick="convert()">Convert</button>
+        <p id="result"></p>
       </div>
     </div>
 

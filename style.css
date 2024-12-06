@@ -26,16 +26,26 @@ p {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.intro-text-container {
+.intro {
   display: flex;
   flex-direction: row;
-  margin: 0 100px 50px 100px;
+}
+
+.intro-text-container {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+
+.intro-text {
+  font-size: 24px;
+  margin: 30px;
 }
 
 .intro-img-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin: 25px;
 }
 
 .intro img {
@@ -46,6 +56,7 @@ p {
   height: 100px;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 #dad-button {
