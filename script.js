@@ -1,5 +1,5 @@
 
-const button = document.querySelector('#random-drink-button')
+const button = document.querySelector('#dad-button')
 const drinkTitle = document.querySelector('#drink-title')
 const ingredients = document.querySelector('#ingredients')
 const drinkInstructions = document.querySelector('#instructions')
@@ -49,9 +49,6 @@ function displayRandomDrink () {
 
 }
 
-button.addEventListener('click', displayRandomDrink)
-
-
 //Dad joke API
 const dadJokeApi = 'https://icanhazdadjoke.com/';
 const dadJokeButton = document.querySelector('#random-dad-joke-button');
@@ -69,4 +66,5 @@ function fetchDadJoke() {
     })
 }
 
-dadJokeButton.addEventListener('click', fetchDadJoke);
+button.addEventListener('click', displayRandomDrink);
+button.addEventListener('click', fetchDadJoke);
