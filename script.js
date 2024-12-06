@@ -4,6 +4,7 @@ const drinkTitle = document.querySelector('#drink-title')
 const ingredients = document.querySelector('#ingredients')
 const drinkInstructions = document.querySelector('#instructions')
 const drinkImage = document.querySelector(".drink-image")
+const contentContainer = document.querySelector('.content-container');
 
 const randomCocktail = 'https://www.thecocktaildb.com/api/json/v1/1/random.php'
 
@@ -79,4 +80,9 @@ document.getElementById('dad-button').addEventListener('click', function() {
 //Change button text on click
 document.getElementById('dad-button').addEventListener('click', function() {
   button.textContent = "Try again";
+});
+
+  // Scroll to the content on click
+document.getElementById('dad-button').addEventListener('click', function () {
+  contentContainer.scrollIntoView({ behavior: 'smooth' });
 });
