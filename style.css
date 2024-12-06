@@ -60,18 +60,21 @@ justify-content: center;
 color: black;
 }
 
+.content-container p, #instructions {
+  padding: 25px;
+  }
+
 .drink-container, .joke-container {
   margin: 20px;
   background-color: var(--paper);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border-radius: 10px;
 }
 
 .drink-container {
-  height: 600px;
+  height: 700px;
   width: 600px;
 }
 
@@ -79,4 +82,9 @@ color: black;
   height: 200px;
   width: 300px;
   padding: 20px;
+}
+
+.drink-image {
+  border: black solid 2px;
+  border-radius: 50%;
 }

@@ -36,8 +36,8 @@ function displayRandomDrink () {
 
       //Resizes img to a fixed size
       function resizeImage() {
-        drinkImage.style.width = "300px"; 
-        drinkImage.style.height = "300px"; 
+        drinkImage.style.width = "250px"; 
+        drinkImage.style.height = "250px"; 
         drinkImage.style.objectFit = "cover"; 
       }
 
@@ -74,4 +74,9 @@ button.addEventListener('click', fetchDadJoke);
 document.getElementById('dad-button').addEventListener('click', function() {
   const contentContainer = document.querySelector('.content-container');
   contentContainer.style.display = 'flex';
+});
+
+//Change button text on click
+document.getElementById('dad-button').addEventListener('click', function() {
+  button.textContent = "Try again";
 });
