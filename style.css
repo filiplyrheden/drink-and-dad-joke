@@ -128,8 +128,7 @@ align-items: center;
 }
 
 #dad-joke {
-  font-size: 20px;
-  font-family: "Arial Rounded MT";
+  text-align: center;
 }
 
 .drink-text-wrapper {

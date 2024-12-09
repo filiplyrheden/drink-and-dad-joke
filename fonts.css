@@ -5,8 +5,3 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
-
-  @font-face {
-    font-family: "Arial Rounded MT";
-    src: url(/assets/Fonts/arialroundedmtbold.ttf);
-}
