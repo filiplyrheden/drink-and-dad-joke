@@ -37,8 +37,6 @@ fetch(cocktailById)
 .then(data => {
   const drink = data.drinks[0]
 
-console.log(drink);
-
 drinkTitle.textContent = drink.strDrink
       drinkInstructions.textContent = drink.strInstructions
 
