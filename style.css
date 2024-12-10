@@ -125,6 +125,7 @@ align-items: center;
   width: 33%;
   padding: 20px;
   box-sizing: border-box;
+  justify-content: center;
 }
 
 #sober-button {
@@ -181,4 +182,94 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .drink-container {
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .joke-container {
+    width: 60%;
+    max-height: 200px;
+  }
+
+  .converter {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .drink-text-wrapper {
+    padding: 15px;
+  }
+
+  .converter label, 
+  .converter input, 
+  .converter select, 
+  .converter button {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+
+  .drink-image {
+    max-width: 250px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  #dad-button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  .drink-text-wrapper h2,
+  .drink-text-wrapper h3 {
+    text-align: center;
+  }
+
+  .drink-image {
+    max-width: 200px;
+  }
 }
