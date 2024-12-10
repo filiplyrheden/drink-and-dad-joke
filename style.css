@@ -127,6 +127,28 @@ align-items: center;
   box-sizing: border-box;
 }
 
+#sober-button {
+  background: linear-gradient(90deg, var(--dark-gold), var(--light-gold));
+  color: var(--charcoal);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #d4af37;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#sober-button:hover {
+  background: linear-gradient(90deg, var(--light-gold), var(--dark-gold));
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
 #dad-joke {
   text-align: center;
 }
