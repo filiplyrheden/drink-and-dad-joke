@@ -272,4 +272,10 @@ align-items: center;
   .drink-image {
     max-width: 200px;
   }
+
+  .drink-container,
+  .joke-container,
+  .converter {
+    width: 90%;
+  }
 }
