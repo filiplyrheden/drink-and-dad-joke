@@ -182,6 +182,55 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  padding: 30px;
+  gap: 15px;
+}
+
+.converter label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.converter input,
+.converter select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 2px solid var(--dark-gold);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: var(--paper);
+  outline: none;
+}
+
+.converter button {
+  background: linear-gradient(90deg, var(--dark-gold), var(--light-gold));
+  color: var(--charcoal);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: 2px solid var(--dark-gold);
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.converter button:hover {
+  background: linear-gradient(90deg, var(--light-gold), var(--dark-gold));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--red);
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -248,6 +297,29 @@ align-items: center;
     max-width: 250px;
     height: auto;
   }
+
+  .converter {
+    width: 90%; 
+    margin: 20px 5%; 
+    padding: 20px; 
+    gap: 10px; 
+  }
+
+  .converter label {
+    font-size: 14px; 
+  }
+
+  .converter input,
+  .converter select {
+    padding: 10px 12px;
+    font-size: 14px; 
+    margin-bottom: 10px; 
+  }
+
+  .converter button {
+    padding: 10px 15px;
+    font-size: 14px; 
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -277,5 +349,32 @@ align-items: center;
   .joke-container,
   .converter {
     width: 90%;
+  }
+
+  .converter {
+    width: 95%; 
+    margin: 10px 2.5%; 
+    padding: 15px; 
+  }
+
+  .converter label {
+    font-size: 12px;
+    align-self: center; 
+  }
+
+  .converter input,
+  .converter select {
+    padding: 8px 10px; 
+    font-size: 12px;
+    margin-bottom: 8px; 
+  }
+
+  .converter button {
+    padding: 8px 12px; 
+    font-size: 12px; 
+  }
+
+  #result {
+    font-size: 14px; 
   }
 }
