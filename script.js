@@ -8,10 +8,10 @@ const drinkImage = document.querySelector(".drink-image")
 const contentContainer = document.querySelector('.content-container');
 const converterContainer = document.querySelector('.converter-container');
 
-const randomCocktail = 'https://www.thecocktaildb.com/api/json/v1/1/random.php'
-const nonAlcoholicCocktail = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic'
 
 //Cocktail API
+const randomCocktail = 'https://www.thecocktaildb.com/api/json/v1/1/random.php'
+const nonAlcoholicCocktail = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic'
 
 //Displays non-alcoholic cocktail
 function displayNonAlcoholicDrink () {
@@ -27,7 +27,7 @@ const randomIndex = Math.floor(Math.random() * drink.length);
 const randomDrink = drink[randomIndex];
 const randomDrinkId = randomDrink['idDrink']
 
-//Endpoint where cocktails are listed by ID, with random non-alcoholic cocktail id inserter in the url.
+//Endpoint where cocktails are listed by ID, with random non-alcoholic cocktail id inserted in the url.
 const cocktailById = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${randomDrinkId}`;
 
 fetch(cocktailById)
@@ -37,6 +37,7 @@ fetch(cocktailById)
 .then(data => {
   const drink = data.drinks[0]
 
+//Prints cocktail recipe
 drinkTitle.textContent = drink.strDrink
       drinkInstructions.textContent = drink.strInstructions
 
@@ -69,6 +70,7 @@ drinkTitle.textContent = drink.strDrink
     })
   }
 
+  //Displays random cocktail
 function displayRandomDrink () {
   fetch(randomCocktail)
     .then(response => {
@@ -77,6 +79,7 @@ function displayRandomDrink () {
     .then(data => {
       const drink = data.drinks[0]
 
+      //Prints cocktail recipe
       drinkTitle.textContent = drink.strDrink
       drinkInstructions.textContent = drink.strInstructions
 
@@ -131,7 +134,7 @@ dadButton.addEventListener('click', displayRandomDrink);
 dadButton.addEventListener('click', fetchDadJoke);
 soberButton.addEventListener('click', displayNonAlcoholicDrink);
 
-//Changes CSS from display:none; to display:flex;
+//Changes CSS from display:none; to display:flex; to show hidden container-divs on button click.
 document.getElementById('dad-button').addEventListener('click', function() {
   const contentContainer = document.querySelector('.content-container');
   contentContainer.style.display = 'flex';
@@ -163,6 +166,7 @@ function convert() {
   const fromUnit = document.getElementById("from-unit").value;
   const toUnit = document.getElementById("to-unit").value;
 
+//If input is empty, display empty result instead of "NaN".
   if (isNaN(quantity)) {
       document.getElementById("result").innerText = "";
       return;
