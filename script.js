@@ -9,13 +9,13 @@ const contentContainer = document.querySelector('.content-container');
 const converterContainer = document.querySelector('.converter-container');
 
 const randomCocktail = 'https://www.thecocktaildb.com/api/json/v1/1/random.php'
-const nonAlcoholicCockatail = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic'
+const nonAlcoholicCocktail = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic'
 
 //Cocktail API
 
 //Displays non-alcoholic cocktail
 function displayNonAlcoholicDrink () {
-  fetch(nonAlcoholicCockatail)
+  fetch(nonAlcoholicCocktail)
     .then(response => {
       return response.json()
     })
