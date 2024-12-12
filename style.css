@@ -141,6 +141,7 @@ align-items: center;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
 }
 
 #sober-button:hover {
