@@ -43,7 +43,8 @@ section .intro {
 .intro-text-container {
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .intro-text {
@@ -60,13 +61,14 @@ align-items: center;
 
 .intro img {
   width: 820px;
+  border-radius: 20px;
 }
 
 .button-container {
   height: 100px;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  padding: 20px;
 }
 
 #dad-button {
@@ -328,21 +330,26 @@ align-items: center;
 }
 
 @media screen and (max-width: 480px) {
+
+  * {
+  -webkit-tap-highlight-color: transparent;
+}
   h1 {
-    font-size: 28px;
+    font-size: 34px;
   }
 
+
   .intro-text {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   #dad-button {
-    font-size: 16px;
+    font-size: 20px;
     padding: 8px 15px;
   }
 
-  #dad-button:hover {
-    margin: 20px;
+  #dad-button:active {
+    transform:scale(104%);
   }
 
   .content-container {
