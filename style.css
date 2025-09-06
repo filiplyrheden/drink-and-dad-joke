@@ -189,6 +189,7 @@ section .intro {
 }
 
 .converter-container {
+  display: flex;
   flex:0.4;
 }
 
