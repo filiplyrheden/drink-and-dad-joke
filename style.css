@@ -67,6 +67,7 @@ section .intro {
 .intro img {
   width: 820px;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .button-container {
@@ -261,6 +262,31 @@ section .intro {
 
 
 @media screen and (max-width: 768px) {
+
+  .intro {
+    flex-direction: column;
+
+  }
+
+  .intro-img-container {
+    width:90%;
+  }
+
+  .intro img {
+    width:100%;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .drink-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
   h1 {
     font-size: 36px;
     padding: 0 10px;
@@ -276,36 +302,25 @@ section .intro {
     padding: 15px;
   }
 
-  .converter label, 
-  .converter input, 
-  .converter select, 
-  .converter button {
-    width: 30%;
-    margin-bottom: 10px;
-  }
-
   .drink-image {
     max-width: 250px;
     height: auto;
   }
 
   .converter {
-    width: 90%; 
-    margin: 20px;
     padding: 20px; 
-    gap: 10px; 
+    gap: 10px;
+    font-size:1.5em; 
   }
 
-  .converter label {
-    font-size: 14px; 
+  .converter * {
+    font-size: 18px !important;
   }
 
-  .converter input,
-  .converter select {
-    padding: 10px 12px;
-    font-size: 14px; 
-    margin-bottom: 10px; 
+  .converter input {
+    width:90%;
   }
+
 
   .converter button {
     padding: 10px 15px;
@@ -349,15 +364,7 @@ section .intro {
     max-width: 200px;
   }
 
-  .drink-container,
-  .joke-container,
   .converter {
-    width: 90%;
-  }
-
-  .converter {
-    width: 90%; 
-    margin: 20px;
     padding: 15px; 
   }
 
