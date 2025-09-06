@@ -36,10 +36,6 @@ p {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-section .intro {
-  height: 100vh;
-}
-
 .intro {
   display: flex;
   flex-direction: row;
@@ -49,6 +45,7 @@ section .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 0.4;
   justify-content: space-evenly;
 }
 
@@ -59,13 +56,14 @@ section .intro {
 }
 
 .intro-img-container {
+  flex:0.6;
   display: flex;
   justify-content: center;
   margin: 25px;
 }
 
 .intro img {
-  width: 820px;
+  width: 100%;
   border-radius: 20px;
   object-fit: cover;
 }
