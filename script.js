@@ -136,9 +136,8 @@ soberButton.addEventListener('click', displayNonAlcoholicDrink)
 
 //Changes CSS from display:none; to display:flex; to show hidden container-divs on button click.
 document.getElementById('dad-button').addEventListener('click', function () {
-  const contentContainer = document.querySelector('.content-container')
-  contentContainer.style.display = 'flex'
-  converterContainer.style.display = 'flex'
+  const content = document.querySelector('.content')
+  content.style.display = 'flex'
 })
 
 //Change button text on click.
