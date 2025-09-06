@@ -8,6 +8,11 @@
   --light-gold: #f8e473;
 }
 
+* {
+  margin:0;
+  padding:0;
+}
+
 body {
   margin: 0;
   background-color: var(--red);
@@ -93,44 +98,52 @@ section .intro {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
-.content-container {
-  gap: 20px;
-  justify-content: center;
-  align-items: stretch;
-  margin: 0;
+
+.content {
   display: none;
+  padding: 20px 20px 20px 20px;
+  gap:20px;
+}
+
+.content-container {
+  flex-direction: column;
+  gap:20px;
+  margin: 0;
   min-height: 400px;
+  flex:0.6;
+  display:flex;
 }
 
 .content-container p {
   color: var(--black);
 }
 
-.drink-container,
-.joke-container {
-  margin: 20px;
-  background-color: var(--paper);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
+.drink-section {
+  flex:0.6;
+  padding:20px;
+  background: var(--paper);
+  border-radius:20px;
 }
 
 .drink-container {
+  background: var(--paper);
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 66%;
-  padding-bottom: 10px;
-  box-sizing: border-box;
+  padding:10px;
 }
 
 .joke-container {
-  width: 33%;
-  padding: 20px;
-  box-sizing: border-box;
+  flex:0.4;
+  display:flex;
+  flex-direction: column;
+  gap:20px; 
   justify-content: center;
+  align-items: center;
+  padding:10px;
+  text-align: center;
+  border-radius:20px;
+  background: var(--paper);
 }
+
 
 #sober-button {
   background: linear-gradient(90deg, var(--dark-gold), var(--light-gold));
@@ -161,19 +174,22 @@ section .intro {
 }
 
 .drink-text-wrapper {
-  padding: 30px;
+  padding:20px;
+  display:flex;
+  flex-direction: column;
+  gap:10px;
 }
 
 .drink-image {
   border: black solid 2px;
-  border-radius: 50%;
+  border-radius: 100%;
   margin: 20px;
+  max-width:200px;
+  max-height:200px;
 }
 
 .converter-container {
-  display: none;
-  justify-content: center;
-  align-items: flex-start;
+  flex:0.4;
 }
 
 .converter-container p {
@@ -181,15 +197,15 @@ section .intro {
 }
 
 .converter {
-  width: 400px;
-  margin: 20px;
   background-color: var(--paper);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   border-radius: 10px;
   padding: 30px;
   gap: 15px;
+  flex:1;
 }
 
 .converter label {
@@ -240,41 +256,8 @@ section .intro {
   text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
-  h1 {
-    font-size: 48px;
-  }
+/* Removed the max-width: 1200px media query since it's unnecessary */
 
-  .intro {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .intro img {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .content-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .drink-container {
-    width: 60%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .joke-container {
-    width: 60%;
-    max-height: 200px;
-  }
-
-  .converter {
-    width: 60%;
-  }
-}
 
 @media screen and (max-width: 768px) {
   h1 {
@@ -353,7 +336,7 @@ section .intro {
   }
 
   .content-container {
-    gap: 0;
+    gap: 20px;
   }
 
   .drink-text-wrapper h2,
